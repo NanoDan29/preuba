@@ -1,0 +1,19 @@
+
+type Query {
+    ingrediente(id:Int): [Ingredient]
+    pizza(name:String,id:Int): [Pizza]
+}
+
+type Ingredient {
+    id: Int!
+    name: String!
+    calories: String
+    origin: String
+}
+
+type Pizza {
+    id: Int!
+    name: String!
+    origin: String
+}
+
